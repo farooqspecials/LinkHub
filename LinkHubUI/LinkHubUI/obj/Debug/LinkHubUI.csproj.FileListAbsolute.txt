@@ -14,6 +14,10 @@ C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubU
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\LinkHubUI.dll.config
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\LinkHubUI.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\LinkHubUI.pdb
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\BLL.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\BOL.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\EntityFramework.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\EntityFramework.SqlServer.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -29,6 +33,10 @@ C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubU
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\System.Web.Webpages.Deployment.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\System.Web.Webpages.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\System.Web.Webpages.Razor.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\BLL.pdb
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\BOL.pdb
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\EntityFramework.xml
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\EntityFramework.SqlServer.xml
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\Microsoft.AI.Web.xml
@@ -44,9 +52,3 @@ C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubU
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\obj\Debug\LinkHubUI.csprojResolveAssemblyReference.cache
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\obj\Debug\LinkHubUI.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\obj\Debug\LinkHubUI.pdb
-C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\BLL.dll
-C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\BOL.dll
-C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\BLL.pdb
-C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\BOL.pdb
-C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\EntityFramework.dll
-C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\EntityFramework.xml
