@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,11 @@ namespace LinkHubUI.Areas.Admin
 {
     public class CategoryController : Controller
     {
-        // GET: Admin/Category
-        public ActionResult Index()
+
+            // GET: Admin/Category
+         public ActionResult Index()
         {
+            
             return View();
         }
     }

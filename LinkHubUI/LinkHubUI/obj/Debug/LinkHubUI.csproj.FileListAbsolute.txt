@@ -33,6 +33,7 @@ C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubU
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\System.Web.Webpages.Deployment.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\System.Web.Webpages.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\System.Web.Webpages.Razor.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\DAL.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\BLL.pdb
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\BOL.pdb
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\EntityFramework.xml
@@ -49,8 +50,7 @@ C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubU
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\System.Web.Webpages.Razor.xml
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\System.Web.Helpers.xml
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\System.Web.Mvc.xml
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\DAL.pdb
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\obj\Debug\LinkHubUI.csprojResolveAssemblyReference.cache
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\obj\Debug\LinkHubUI.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\obj\Debug\LinkHubUI.pdb
-C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\DAL.dll
-C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\DAL.pdb
