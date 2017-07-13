@@ -11,16 +11,16 @@
 <table class="table">
     <tr class="info">
         <th>
-            @Html.ActionLink("UrlTitle", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : (ViewBag.SortOrder == "Asc" ? "Desc" : "Asc")), SortBy = "Title" })
+            @Html.ActionLink("UrlTitle", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : (ViewBag.SortOrder == "Asc" ? "Desc" : "Asc")), SortBy = "Title" , page = (ViewBag.Page == null ? "1" : ViewBag.Page) })
         </th>
         <th>
-            @Html.ActionLink("Url", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : (ViewBag.SortOrder == "Asc" ? "Desc" : "Asc")), SortBy = "Url"})
+            @Html.ActionLink("Url", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : (ViewBag.SortOrder == "Asc" ? "Desc" : "Asc")), SortBy = "Url", page = (ViewBag.Page == null ? "1" : ViewBag.Page) })
         </th>
         <th>
-            @Html.ActionLink("urlDesc", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : (ViewBag.SortOrder == "Asc" ? "Desc" : "Asc")), SortBy = "UrlDesc" })
+            @Html.ActionLink("urlDesc", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : (ViewBag.SortOrder == "Asc" ? "Desc" : "Asc")), SortBy = "UrlDesc", page = (ViewBag.Page == null ? "1" : ViewBag.Page) })
         </th>
         <th>
-            @Html.ActionLink("CategoryName", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : (ViewBag.SortOrder == "Asc" ? "Desc" : "Asc")), SortBy = "Category"})
+            @Html.ActionLink("CategoryName", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : (ViewBag.SortOrder == "Asc" ? "Desc" : "Asc")), SortBy = "Category", page = (ViewBag.Page == null ? "1" : ViewBag.Page) })
         </th>
 
     </tr>
@@ -51,7 +51,21 @@
 @{ 
     double TotalPage = ViewBag.TotalPages;
 }
-@for (int i=1; i<=TotalPage; i++)
-{
-    @Html.ActionLink(i.ToString() + " ", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : ViewBag.SortOrder), SortBy = (ViewBag.SortBy == null ? "Title" : ViewBag.SortBy), Page = i })
-}
+<ul class="pagination">
+    @for (int i = 1; i <= TotalPage; i++)
+    {
+
+        if (i == ViewBag.Page)
+        {
+            <li class="active"> @Html.ActionLink(i.ToString() + " ", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : ViewBag.SortOrder), SortBy = (ViewBag.SortBy == null ? "Title" : ViewBag.SortBy), Page = i })</li>
+        }
+        else
+        {
+            <li>
+                @Html.ActionLink(i.ToString() + " ", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : ViewBag.SortOrder), SortBy = (ViewBag.SortBy == null ? "Title" : ViewBag.SortBy), Page = i })
+            </li>
+        }
+
+    }
+</ul>
+

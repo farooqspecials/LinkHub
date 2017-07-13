@@ -21,7 +21,7 @@ namespace LinkHubUI.Areas.Common.Controllers
         
 
         // GET: Common/BrowseURLs
-        public ActionResult Index(string SortOrder, string SortBy)
+        public ActionResult Index(string SortOrder, string SortBy, string Page)
         {
 
             ViewBag.SortOrder = SortOrder;
@@ -98,6 +98,9 @@ namespace LinkHubUI.Areas.Common.Controllers
             }
 
             ViewBag.TotalPages = Math.Ceiling(objBs.GetALL().Where(x => x.IsApproved == "A").Count() / 10.0);
+            int page = int.Parse(Page == null ? "1" : Page);
+            ViewBag.Page = page;
+            urls = urls.Skip((page - 1) * 10).Take(10);
 
             return View(urls);
         }
