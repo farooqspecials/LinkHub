@@ -7,3 +7,6 @@ C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\DAL\bin\Debug\Enti
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\DAL\obj\Debug\DAL.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\DAL\obj\Debug\DAL.pdb
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\DAL\bin\Debug\DAL.dll.config
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\DAL\bin\Debug\EntityFramework.SqlServer.xml
