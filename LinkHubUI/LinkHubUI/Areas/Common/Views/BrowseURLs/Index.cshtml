@@ -48,10 +48,10 @@
 
 
 </table>
-@{
+@{ 
     double TotalPage = ViewBag.TotalPages;
 }
-@for (int i = 1; i <= TotalPage; i++)
+@for (int i=1; i<=TotalPage; i++)
 {
-    <a> @i </a>
+    @Html.ActionLink(i.ToString() + " ", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : ViewBag.SortOrder), SortBy = (ViewBag.SortBy == null ? "Title" : ViewBag.SortBy), Page = i })
 }
