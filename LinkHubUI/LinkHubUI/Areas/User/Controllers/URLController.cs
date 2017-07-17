@@ -14,6 +14,7 @@ namespace LinkHubUI.Areas.User
         {
             LinkHubDbEntities db = new LinkHubDbEntities();
             ViewBag.CategoryId = new SelectList(db.tbl_Category, "CategoryId", "CategoryName");
+            ViewBag.UserID = new SelectList(db.tbl_User, "UserId", "UserEmail");
             return View();
         }
 
