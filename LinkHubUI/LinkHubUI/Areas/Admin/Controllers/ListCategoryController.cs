@@ -11,18 +11,18 @@ namespace LinkHubUI.Areas.Admin
     {
 
 
-        private CategoryBs objBs;
+        private AdminBs objBs;
 
         public ListCategoryController()
         {
-            objBs = new CategoryBs();
+            objBs = new AdminBs();
         }
         // GET: Admin/ListCategory
         public ActionResult Index(string SortOrder, string SortBy, string Page)
         {
             ViewBag.SortOrder = SortOrder;
             ViewBag.SortBy = SortBy;
-            var cat = objBs.GetALL();
+            var cat = objBs.cateogryBs.GetALL();
 
             switch (SortBy)
             {
@@ -42,7 +42,7 @@ namespace LinkHubUI.Areas.Admin
                     break;
             }
 
-            ViewBag.TotalPages = Math.Ceiling(objBs.GetALL().Count() / 10.0);
+            ViewBag.TotalPages = Math.Ceiling(objBs.cateogryBs.GetALL().Count() / 10.0);
             int page = int.Parse(Page == null ? "1" : Page);
             ViewBag.Page = page;
             //  urls = urls.Skip((page - 1) * 10).Take(10);
@@ -57,7 +57,7 @@ namespace LinkHubUI.Areas.Admin
 
             try
             {
-                objBs.Delete(id);
+                objBs.cateogryBs.Delete(id);
                 //objBs.categoryBs.Delete(id);
                 TempData["Msg"] = "Deleted Successfully";
                 return RedirectToAction("Index");

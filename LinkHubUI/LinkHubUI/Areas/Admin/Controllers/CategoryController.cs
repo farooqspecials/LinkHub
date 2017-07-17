@@ -10,11 +10,11 @@ namespace LinkHubUI.Areas.Admin
 {
     public class CategoryController : Controller
     {
-        private CategoryBs objBs;
+        private AdminBs objBs;
 
         public CategoryController()
         {
-            objBs = new CategoryBs();
+            objBs = new AdminBs();
         }
         // GET: Admin/Category
         public ActionResult Index()
@@ -30,7 +30,7 @@ namespace LinkHubUI.Areas.Admin
             {
                 if (ModelState.IsValid)
                 {
-                    objBs.Insert(cat);
+                    objBs.cateogryBs.Insert(cat);
                     //objBs.categoryBs.Delete(id);
                     TempData["Msg"] = "Category Created Successfully";
                     return RedirectToAction("Index");

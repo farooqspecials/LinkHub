@@ -12,11 +12,11 @@ namespace LinkHubUI.Areas.Common.Controllers
     public class BrowseURLsController : Controller
     {
 
-        private UrlBs objBs;
+        private CommonBs objBs;
 
         public BrowseURLsController()
         {
-            objBs = new UrlBs();
+            objBs = new CommonBs();
         }
         
 
@@ -28,7 +28,7 @@ namespace LinkHubUI.Areas.Common.Controllers
             ViewBag.SortBy = SortBy;
             //  var Urls = ObjBs.GetALL().Where(x=>x.IsApproved=="A").ToList();
 
-            var urls = objBs.GetALL().Where(x => x.IsApproved == "A");
+            var urls = objBs.urlBs.GetALL().Where(x => x.IsApproved == "A");
 
             switch (SortBy)
             {
@@ -97,7 +97,7 @@ namespace LinkHubUI.Areas.Common.Controllers
                     break;
             }
 
-            ViewBag.TotalPages = Math.Ceiling(objBs.GetALL().Where(x => x.IsApproved == "A").Count() / 10.0);
+            ViewBag.TotalPages = Math.Ceiling(objBs.urlBs.GetALL().Where(x => x.IsApproved == "A").Count() / 10.0);
             int page = int.Parse(Page == null ? "1" : Page);
             ViewBag.Page = page;
             urls = urls.Skip((page - 1) * 10).Take(10);

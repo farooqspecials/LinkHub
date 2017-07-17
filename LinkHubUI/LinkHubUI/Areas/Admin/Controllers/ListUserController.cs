@@ -9,11 +9,11 @@ namespace LinkHubUI.Areas.Admin
 {
     public class ListUserController : Controller
     {
-        private UserBs objBs;
+        private AdminBs objBs;
 
         public ListUserController()
         {
-            objBs = new UserBs();
+            objBs = new AdminBs();
         }
 
         // GET: Admin/ListUser
@@ -22,7 +22,7 @@ namespace LinkHubUI.Areas.Admin
             ViewBag.SortOrder = SortOrder;
             ViewBag.SortBy = SortBy;
 
-            var users = objBs.GetALL();
+            var users = objBs.userBs.GetALL();
             switch (SortBy)
             {
                 case "UserEmail":
@@ -59,7 +59,7 @@ namespace LinkHubUI.Areas.Admin
                     users = users.OrderBy(x => x.UserEmail).ToList();
                     break;
             }
-            ViewBag.TotalPages = Math.Ceiling(objBs.GetALL().Count() / 10.0);
+            ViewBag.TotalPages = Math.Ceiling(objBs.userBs.GetALL().Count() / 10.0);
             int page = int.Parse(Page == null ? "1" : Page);
             ViewBag.Page = page;
             users = users.Skip((page - 1) * 10).Take(10).ToList();
