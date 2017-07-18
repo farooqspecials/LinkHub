@@ -20,9 +20,33 @@
     </div>}
 
 <h4>
-    @Html.ActionLink("Pending URL", "Index", new { status = "P" }) |
-    @Html.ActionLink("Approved URL", "Index", new { status = "A" }) |
+    @if (ViewBag.Status == "P")
+    {
+        <b> @Html.ActionLink("Pending URL", "Index", new { status = "P" })</b>
+    }
+    else
+    {
+
+     @Html.ActionLink("Pending URL", "Index", new { status = "P" })
+    }
+     |
+@if (ViewBag.Status == "A")
+{
+    <b> @Html.ActionLink("Approved URL", "Index", new { status = "A" })</b>
+}
+else
+{
+    @Html.ActionLink("Approved URL", "Index", new { status = "A" })
+}
+|
+@if (ViewBag.Status == "R")
+{
+    <b> @Html.ActionLink("Rejected URL", "Index", new { status = "R" })</b>
+}
+else
+{
     @Html.ActionLink("Rejected URL", "Index", new { status = "R" })
+}
 </h4>
 </p>
 <table class="table">

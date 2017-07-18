@@ -12,7 +12,7 @@ namespace LinkHubUI.Areas.Admin
         // GET: Admin/ApproveURLs
         public ActionResult Index(string Status)
         {
-          //  ViewBag.Status = (Status == null ? "P" : Status);
+            ViewBag.Status = (Status == null ? "P" : Status);
             if (Status == null)
             {
                 var urls = objBs.urlBs.GetALL().Where(x => x.IsApproved == "P").ToList();
