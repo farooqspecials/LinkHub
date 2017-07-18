@@ -7,3 +7,4 @@ C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\BOL\bin\
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\BOL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\BOL\obj\Debug\BOL.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\BOL\obj\Debug\BOL.pdb
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache

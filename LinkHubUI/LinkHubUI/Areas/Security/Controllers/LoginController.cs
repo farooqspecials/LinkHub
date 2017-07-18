@@ -6,8 +6,10 @@ using System.Web.Mvc;
 
 namespace LinkHubUI.Areas.Security.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
+        
         // GET: Security/Login
         public ActionResult Index()
         {

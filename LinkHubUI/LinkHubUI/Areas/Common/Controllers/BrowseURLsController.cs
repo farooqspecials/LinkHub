@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace LinkHubUI.Areas.Common.Controllers
 {
+    [AllowAnonymous]
     public class BrowseURLsController : Controller
     {
 
