@@ -6,18 +6,8 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class AdminBs
+    public class AdminBs: BaseBs
     {
-        public CategoryBs cateogryBs { get; set; }
-        public UrlBs urlBs { get; set; }
-
-        public UserBs userBs { get; set; }
-
-        public AdminBs()
-        {
-            cateogryBs = new CategoryBs();
-            userBs = new UserBs();
-            urlBs = new UrlBs();
-        }
+      
     }
 }

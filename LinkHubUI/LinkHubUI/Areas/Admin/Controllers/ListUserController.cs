@@ -1,4 +1,5 @@
 ﻿using BLL;
+using LinkHubUI.Areas.Admin.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,15 +8,9 @@ using System.Web.Mvc;
 
 namespace LinkHubUI.Areas.Admin
 {
-    public class ListUserController : Controller
+    public class ListUserController : BaseAdminController
     {
-        private AdminBs objBs;
-
-        public ListUserController()
-        {
-            objBs = new AdminBs();
-        }
-
+       
         // GET: Admin/ListUser
         public ActionResult Index(string SortOrder, string SortBy, string Page)
         {

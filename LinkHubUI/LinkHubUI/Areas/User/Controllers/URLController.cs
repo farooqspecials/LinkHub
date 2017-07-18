@@ -22,11 +22,11 @@ namespace LinkHubUI.Areas.User
 
 
         //     }
-        private BaseBs objBs;
+        private UserAreaBs objBs;
 
         public URLController()
         {
-            objBs = new BaseBs();
+            objBs = new UserAreaBs();
 
         }
 

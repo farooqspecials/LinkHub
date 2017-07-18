@@ -1,5 +1,6 @@
 ﻿using BLL;
 using BOL;
+using LinkHubUI.Areas.Admin.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,14 +9,9 @@ using System.Web.Mvc;
 
 namespace LinkHubUI.Areas.Admin
 {
-    public class CategoryController : Controller
+    public class CategoryController : BaseAdminController
     {
-        private AdminBs objBs;
-
-        public CategoryController()
-        {
-            objBs = new AdminBs();
-        }
+       
         // GET: Admin/Category
         public ActionResult Index()
         {
