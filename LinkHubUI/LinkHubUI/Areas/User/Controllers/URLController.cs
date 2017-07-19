@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace LinkHubUI.Areas.User
 {
+    [Authorize(Roles = "A,U")]
     public class URLController : Controller
     {
         // private CategoryBs CatBs;
