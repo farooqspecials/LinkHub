@@ -8,7 +8,7 @@
 <h2>BrowseURLs</h2>
 
 
-<table class="table">
+<table class="table table-striped table-hover ">
     <tr class="info">
         <th>
             @Html.ActionLink("UrlTitle", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : (ViewBag.SortOrder == "Asc" ? "Desc" : "Asc")), SortBy = "Title" , page = (ViewBag.Page == null ? "1" : ViewBag.Page) })
