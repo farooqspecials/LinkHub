@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BOL;
+using System.Transactions;
 
 namespace BLL
 {
@@ -11,25 +12,29 @@ namespace BLL
     {
         public void InsertQuickUrl(QuickURLSubmitModel myModel)
         {
-            try
+            using (TransactionScope Trans = new TransactionScope())
             {
-                tbl_User u = myModel.User;
-                u.Password = u.ConfirmPassword = "123456";
-                u.Role = "U";
-                userBs.Insert(u);
+                try
+                {
+                    tbl_User u = myModel.User;
+                    u.Password = u.ConfirmPassword = "123456";
+                    u.Role = "U";
+                    userBs.Insert(u);
 
-                tbl_Url myUrl = myModel.MyUrl;
-                myUrl.UserId = u.UserId;
-                myUrl.UrlDesc = myUrl.UrlTitle;
-                myUrl.IsApproved = "P";
-                
-                urlBs.Insert(myUrl);
+                    tbl_Url myUrl = myModel.MyUrl;
+                    myUrl.UserId = u.UserId;
+                    myUrl.UrlDesc = myUrl.UrlTitle;
+                    myUrl.IsApproved = "P";
 
-                /*Trans.Complete()*/;
-            }
-            catch (Exception E1)
-            {
-                throw new Exception(E1.Message);
+                    urlBs.Insert(myUrl);
+
+                    Trans.Complete();
+                    
+                }
+                catch (Exception E1)
+                {
+                    throw new Exception(E1.Message);
+                }
             }
         }
     }
