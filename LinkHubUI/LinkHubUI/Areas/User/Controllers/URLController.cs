@@ -36,7 +36,7 @@ namespace LinkHubUI.Areas.User
         {
             //LinkHubDbEntities db = new LinkHubDbEntities();
             ViewBag.CategoryId = new SelectList(objBs.cateogryBs.GetALL(), "CategoryId", "CategoryName");
-            ViewBag.UserID = new SelectList(objBs.userBs.GetALL(), "UserId", "UserEmail");
+            //ViewBag.UserID = new SelectList(objBs.userBs.GetALL(), "UserId", "UserEmail");
             return View();
         }
 
@@ -47,17 +47,19 @@ namespace LinkHubUI.Areas.User
             try
             {
                 if (ModelState.IsValid)
-            {
-
+                {
+                    myUrl.UserId = objBs.userBs.GetALL().Where(x => x.UserEmail == User.Identity.Name).FirstOrDefault().UserId;
+                   
+                    myUrl.IsApproved = "P";
                objBs.urlBs.Insert(myUrl);
                 TempData["Msg"] = "Created Successfully";
                 return RedirectToAction("Index");
-            }
-            else
-            {
+                }
+                else
+               {
                 ViewBag.CategoryId = new SelectList(objBs.cateogryBs.GetALL().ToList(), "CategoryId", "CategoryName");
                 return View("Index");
-            }
+               }
         }
             catch (Exception e1)
             {

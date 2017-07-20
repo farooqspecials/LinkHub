@@ -1,0 +1,11 @@
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\BLL\bin\Release\BLL.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\BLL\bin\Release\BLL.pdb
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\BLL\bin\Release\BOL.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\BLL\bin\Release\DAL.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\BLL\bin\Release\EntityFramework.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\BLL\bin\Release\DAL.pdb
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\BLL\bin\Release\BOL.pdb
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\BLL\bin\Release\EntityFramework.xml
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\BLL\obj\Release\BLL.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\BLL\obj\Release\BLL.pdb
