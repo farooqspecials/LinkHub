@@ -60,5 +60,20 @@ namespace LinkHubUI.Areas.Admin
                 return RedirectToAction("Index");
             }
         }
+
+        public void ApproveOrRejectAll(List<int> Ids, String Status)
+        {
+            try
+            {
+                ViewBag.Status =Status;
+                objBs.ApproveOrReject(Ids, Status);
+                TempData["Msg"] = "Operation Successfully";
+
+            }
+            catch(Exception e)
+            {
+                TempData["Msg"] = "Operation Successfully" + e;
+            }
+        }
     }
 }

@@ -4,15 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title Share links Online</title>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    
+    
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
 
-    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+   
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
-
-    <!-- Start WOWSlider.com HEAD section -->
-    <link rel="stylesheet" type="text/css" href="~/engine1/style.css" />
-    <script type="text/javascript" src="~/engine1/jquery.js"></script>
-    <!-- End WOWSlider.com HEAD section -->
+   
+   
 </head>
 <body>
     <div class="navbar navbar-default navbar-fixed-top">
@@ -28,17 +32,31 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", new { Controller = "Home", Area = "Common" })</li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">URL <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("BrowseURLs", "Index", new { Controller = "BrowseURLs", Area = "Common" })</li>
+                            <li>@Html.ActionLink("QuickSubmitURL", "Index", new { Controller = "QuickURL", Area = "Common" })</li>
+                        </ul>
+                    </li>
                     
-                    
-                    <li>@Html.ActionLink("BrowseURLs", "Index", new { Controller = "BrowseURLs", Area = "Common" })</li>
-                    <li>@Html.ActionLink("QuickSubmitURL", "Index", new { Controller = "QuickURL", Area = "Common" })</li>
+                    @*<li>@Html.ActionLink("BrowseURLs", "Index", new { Controller = "BrowseURLs", Area = "Common" })</li>
+                    <li>@Html.ActionLink("QuickSubmitURL", "Index", new { Controller = "QuickURL", Area = "Common" })</li>*@
                     
                      @if (User.Identity.IsAuthenticated)
                      {
                          if (User.IsInRole("A"))
                          {
-                    <li>@Html.ActionLink("Category", "Index", new { Controller = "Category", Area = "Admin" })</li>
-                    <li>@Html.ActionLink("ListCategory", "Index", new { Controller = "ListCategory", Area = "Admin" })</li>
+
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown" >Category <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>@Html.ActionLink("Category", "Index", new { Controller = "Category", Area = "Admin" })</li>
+                                    <li>@Html.ActionLink("ListCategory", "Index", new { Controller = "ListCategory", Area = "Admin" })</li>
+                                </ul>
+                            </li>
+                    @*<li>@Html.ActionLink("Category", "Index", new { Controller = "Category", Area = "Admin" })</li>
+                    <li>@Html.ActionLink("ListCategory", "Index", new { Controller = "ListCategory", Area = "Admin" })</li>*@
                     
                     <li>@Html.ActionLink("ApproveURLs", "Index", new { Controller = "ApproveURLs", Area = "Admin" })</li>
                          
@@ -80,9 +98,7 @@
     </div>
 
 
-    <script src="~/Scripts/jquery-3.1.1.js"></script>
-    @*<script src="~/Scripts/bootstrap.min.js"></script>*@
-    <script src="~/Scripts/jquery.validate.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @*<script src="~/Scripts/jquery-3.1.1.js"></script>*@
+    
 </body>
 </html>
