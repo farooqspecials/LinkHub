@@ -54,3 +54,8 @@ C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubU
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\obj\Debug\LinkHubUI.csprojResolveAssemblyReference.cache
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\obj\Debug\LinkHubUI.dll
 C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\obj\Debug\LinkHubUI.pdb
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\bin\Microsoft.ReportViewer.WebForms.xml
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\obj\Debug\RdlCompile.cache
+C:\Users\farooq\Documents\Visual Studio 2015\Projects\Project\LinkHubUI\LinkHubUI\obj\Debug\RdlCompile.compiled
